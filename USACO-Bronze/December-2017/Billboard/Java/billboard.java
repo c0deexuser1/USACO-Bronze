@@ -3,8 +3,8 @@ import java.util.*;
 public class billboard {
 	public static void main(String[] args) throws IOException {
 		// initialize file I/O
-		BufferedReader br = new BufferedReader(new FileReader("../Data/1.in"));
-		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("1.out")));
+		BufferedReader br = new BufferedReader(new FileReader("../Data/2.in"));
+		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("2.out")));
 
 		// read in the locations of the first billboard
 		StringTokenizer st = new StringTokenizer(br.readLine());

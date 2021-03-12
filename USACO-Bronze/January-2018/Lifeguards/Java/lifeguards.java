@@ -4,7 +4,7 @@ public class lifeguards {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("lifeguards.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("lifeguards.out")));
-		
+
 		// read in the information about the life guards
 		int n = Integer.parseInt(br.readLine());
 		int[] start = new int[n];
@@ -14,8 +14,8 @@ public class lifeguards {
 			start[i] = Integer.parseInt(st.nextToken());
 			end[i] = Integer.parseInt(st.nextToken());
 		}
-		
-		// figure out, for each time interval, how many lifeguards are covering it 
+
+		// figure out, for each time interval, how many lifeguards are covering it
 		int[] numCover = new int[1000];
 		for(int i = 0; i < n; i++) {
 			for(int t = start[i]; t < end[i]; t++) {
